@@ -1,3 +1,6 @@
 __pycache__
 /venv
 /data
+/image
+/gt-image
+/model_weights

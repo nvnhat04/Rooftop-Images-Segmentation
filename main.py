@@ -11,7 +11,6 @@ import os
 from torch.utils.data import Dataset
 
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def preprocess_image(image_path):
@@ -76,7 +75,6 @@ plt.subplot(1, 3, 2)
 plt.title("Predicted Mask")
 plt.imshow(pred_mask.squeeze().cpu().numpy(), cmap='gray')
 plt.axis('off')
-
 
 plt.subplot(1, 3, 3)
 plt.title("Mask")
